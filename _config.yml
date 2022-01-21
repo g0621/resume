@@ -1,6 +1,6 @@
 # Site settings
-title: "Mari Kwee's Website"
-description: "Mari Kwee's Resume."
+title: "Gyan Vardhan"
+description: "Gyan Vardhan's Resume."
 
 # Build settings
 markdown: kramdown
@@ -10,20 +10,22 @@ sass:
 
 # Resume settings
 resume_avatar:                  "true"
-resume_name:                    "Mari Kwee"
-resume_title:                   "Computer Science Major and Data Science Minor at Seattle University"
+resume_name:                    "Gyan Vardhan"
+resume_title:                   "Full Stack Software Engineer"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "kweemari@seattleu.edu"
+resume_contact_email:           "gyan.work1997@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "808-687-1364"
-resume_contact_address:         "1223 E Cherry Street Seattle, WA"
+resume_contact_telephone:       "+91-6205527899"
+resume_contact_address:         "Anupan colony, Sikandarpur, Muzaffarpur, Bihar"
 
-resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334 • lisasimpson@youremailaddress.com"
-display_header_contact_info:    "false"
+resume_header_contact_info:     "Hyderabad, IN  •  <a href='tel:+916205527899'>+91-6205527899</a>"
+display_header_contact_info:    "true"
 
-resume_header_intro: "<p>Hi, my name is Mari Kwee. I am a computer science major and data science minor at Seattle University. I expect to graduate in June 2023. Please feel free to contact me at kweemari@seattleu.edu below.</p>"
+resume_header_intro: "<p><i>I am a <b>Software Engineer</b> having deep interest in producing and designing quality code with a range of side
+        projects. I have a solid foundation in <b>data structure & algorithms</b> along with experience in <b>frontend, backend and
+        mobile development.</b> </i></p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
@@ -45,13 +47,17 @@ resume_section_interests:       true
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://https://github.com/marikwee"
+  resume_github_url:            "https://github.com/g0621"
   #resume_twitter_url:           "http://twitter.com/jglovier"
   #resume_dribbble_url:          "https://dribbble.com/jag"
-  # resume_facebook_url:          "insert Facebook URL here"
-  resume_linkedin_url:          "https://www.linkedin.com/in/mari-kwee-98b668203/"
-  # resume_instagram_url:         "insert your Instagram URL here"
-  #resume_website_url:           "http://joelglovier.com"
+  resume_facebook_url:          "https://www.facebook.com/gyan199"
+  resume_linkedin_url:          "https://www.linkedin.com/in/gyanvardhan"
+  resume_instagram_url:         "https://www.instagram.com/jst_gyan/?hl=en"
+  resume_website_url:           "https://bit.ly/gyanvardhan"
+  resume_leetcode_url:          "https://leetcode.com/gyansingh1997"
+  resume_hackerrank_url:        "https://www.hackerrank.com/gyansingh1997"
+  resume_codechef_url:          "https://www.codechef.com/users/gyan0621"
+  resume_hackerearth_url:       "https://www.hackerearth.com/@gyansingh1997"
   #resume_medium_url:            "https://medium.com/@jglovier"
 resume_print_social_links:      true
 

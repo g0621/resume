@@ -21,7 +21,7 @@
 .page-header { padding: 1.5rem 0;
 
   .avatar {
-    width: 95px;
+    width: 155px;
     max-width: 100%;
     overflow: hidden;
     @include border-radius(100px);
@@ -62,10 +62,10 @@
       text-align: center;
       margin: 0 0 .5rem;
 
-      @include media_larger_than_mobile {
-        float: left;
-        margin: 0;
-      }
+      // @include media_larger_than_mobile {
+      //   float: left;
+      //   margin: 0;
+      // }
     }
   }
 
@@ -83,12 +83,13 @@
   text-align: center;
   border-top: 2px solid #c7c7c7;
   padding-top: .4rem;
+  
 
-  @include media_larger_than_mobile {
-    float: right;
-    border-top: none;
-    padding-top: 0;
-  }
+  // @include media_larger_than_mobile {
+  //   float: right;
+  //   border-top: none;
+  //   padding-top: 0;
+  // }
 
   .icon-link-item {
     display: inline-block;
@@ -153,6 +154,15 @@
     &.award-title {
       font-size: 1rem;
     }
+  }
+
+  .image-center {
+    height: auto;  
+    width: 100%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   .resume-item-title,

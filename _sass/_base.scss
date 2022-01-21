@@ -17,6 +17,10 @@ body{
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .wrapper:before,
 .wrapper:after { content:""; display:table; }
 .wrapper:after { clear: both; }

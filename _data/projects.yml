@@ -14,3 +14,5 @@
   duration: 2021
   # url: "#"
   description: Used Github to create a resume website using HTML and CSS. 
+  image_path: "images/SCOG.jpg"
+  image_name: "SCOG"
