@@ -9,61 +9,63 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar:                  "true"
-resume_name:                    "Gyan Vardhan"
-resume_title:                   "Full Stack Software Engineer"
+resume_avatar: "true"
+resume_name: "Gyan Vardhan"
+resume_title: "Full Stack Software Engineer"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "gyan.work1997@gmail.com"
+resume_contact_email: "gyan.work1997@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "+91-6205527899"
-resume_contact_address:         "Anupan colony, Sikandarpur, Muzaffarpur, Bihar"
+resume_contact_telephone: "+91-6205527899"
+resume_contact_address: "Anupan colony, Sikandarpur, Muzaffarpur, Bihar"
 
-resume_header_contact_info:     "Hyderabad, IN  •  <a href='tel:+916205527899'>+91-6205527899</a>"
-display_header_contact_info:    "true"
+resume_header_contact_info: "Hyderabad, IN  •  <a href='tel:+916205527899'>+91-6205527899</a>"
+display_header_contact_info: "true"
 
-resume_header_intro: "<p><i>I am a <b>Software Engineer</b> having deep interest in producing and designing quality code with a range of side
-        projects. I have a solid foundation in <b>data structure & algorithms</b> along with experience in <b>frontend, backend and
-        mobile development.</b> </i></p>"
+resume_header_intro:
+  "<p><i>I am a <b>Software Engineer</b> having deep interest in developing and designing scalable systems with quality code.
+  I have a solid foundation in <b>data structure & algorithms</b> along with experience in <b>frontend, backend and
+  mobile development</b> with a range of side projects.</i></p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
 # or remove the resume_looking_for_work option entirely
 # to leave blank
-resume_looking_for_work:        "yes"
+resume_looking_for_work: "yes"
+
+enable_pills: "true"
 
 # Decide which sections to use
 # comment out to hide
-resume_section_experience:      true
-resume_section_education:       true
-resume_section_projects:        true
-resume_section_skills:          true
+resume_section_experience: true
+resume_section_education: true
+resume_section_projects: true
+resume_section_skills: true
 #resume_section_recognition:     true
 #resume_section_links:           true
-resume_section_associations:    true
-resume_section_interests:       true
+resume_section_associations: true
+resume_section_interests: true
 
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://github.com/g0621"
+  resume_github_url: "https://github.com/g0621"
   #resume_twitter_url:           "http://twitter.com/jglovier"
   #resume_dribbble_url:          "https://dribbble.com/jag"
-  resume_facebook_url:          "https://www.facebook.com/gyan199"
-  resume_linkedin_url:          "https://www.linkedin.com/in/gyanvardhan"
-  resume_instagram_url:         "https://www.instagram.com/jst_gyan/?hl=en"
-  resume_website_url:           "https://bit.ly/gyanvardhan"
-  resume_leetcode_url:          "https://leetcode.com/gyansingh1997"
-  resume_hackerrank_url:        "https://www.hackerrank.com/gyansingh1997"
-  resume_codechef_url:          "https://www.codechef.com/users/gyan0621"
-  resume_hackerearth_url:       "https://www.hackerearth.com/@gyansingh1997"
+  resume_facebook_url: "https://www.facebook.com/gyan199"
+  resume_linkedin_url: "https://www.linkedin.com/in/gyanvardhan"
+  resume_instagram_url: "https://www.instagram.com/jst_gyan/?hl=en"
+  resume_website_url: "https://bit.ly/gyanvardhan"
+  resume_leetcode_url: "https://leetcode.com/gyansingh1997"
+  resume_hackerrank_url: "https://www.hackerrank.com/gyansingh1997"
+  resume_codechef_url: "https://www.codechef.com/users/gyan0621"
+  resume_hackerearth_url: "https://www.hackerearth.com/@gyansingh1997"
   #resume_medium_url:            "https://medium.com/@jglovier"
-resume_print_social_links:      true
+resume_print_social_links: true
 
 # Design settings
-resume_theme:                   default
-
+resume_theme: default
 # Note: when editing locally, remember to restart
 # your Jekyll server when you edit this file. Changes
 # to _config.yml are only recognized when the server starts

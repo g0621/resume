@@ -63,6 +63,18 @@
         <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
         <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
         <p class="resume-item-copy">{{ job.summary }}</p>
+        <ul style="margin: 0.3em 0 0.3em 0;font-size: .9em;">
+        {% for point in job.points %}
+          <li>{{point}}</li>
+        {% endfor %}
+        </ul>
+        {% if site.enable_pills == 'true' %}
+          <ul style="padding-inline-start: 0.2em;margin: 0;">
+            {% for tech in job.techs %}
+              <li class="dot-tech">{{tech}}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </div><!-- end of resume-item -->
       {% endfor %}
 
@@ -239,7 +251,7 @@
     {% endif %}
 
     <footer class="page-footer">
-      <p class="footer-line">Mari Kwee - kweemari@seattleu.edu</p>
+      <p class="footer-line">Gyan Vardhan - gyan.work1997@gmail.com</p>
     </footer>
 
   </div>

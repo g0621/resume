@@ -1,29 +1,71 @@
 # Jobs
-# Nalu Health Bar
-- company: Nalu Health Bar
-  position: Cafe Associate
-  duration: April 2021 &mdash; September 2021
-  summary: I worked at local cafe during the Covid-19 pandemic where I learned how to make acai bowls, smoothies, coffee, juices, and toasts. 
-           I worked in a fast paced enviroment where it was essential to learn the tasks in an efficient and timely matter. 
-           I also maintained daily sanitation where I wiped down counters, swept, mopped, and washed dishes. 
-           A couple months into the position, I was also a trainer where I taught new employees the tasks we accomplished everyday. 
-           I also collaborated new ideas with team members to make the workplace more efficient. I not only learned how to be a team member, but also a leader.
+# Arcesium SSE
+- company: Arcesium India Private Limited
+  position: Senior Software Engineer
+  location: Hyderabad
+  duration: July 2021 &mdash; Present
+  summary:
+    Got early promotion with new project and responsibilities.
+  points:
+    - Mentored 2 freshers and guided a new joiner resolving their technical blockers.
+    - Designed and implemented one critical flow of ELT pipeline which processes and enriches transactional data for upstream layers.
+    - Exposed APIs for various kind of report generation over aggregated data.
+  techs:
+    - AWS
+    - Spring Boot
+    - PostgreSQL
+    - Python 
+    - React
 
-# Core Power Yoga
-- company: Core Power Yoga
-  position: Studio Experience Team
-  duration: January 2020 &mdash; March 2020
-  summary: Right before the Covid-19 outbreak, I worked at Core Power Yoga as a Studio Experience Teammember. 
-           I have been a Core Power Yoga member for four years, following a journey through yoga. 
-           I was able to give back to the yoga community I felt grounded in by creating a safe and healthy environment for members. 
-           I wiped down yoga equiptment, sanitized studios, and interracted with customers on a daily basis making them feel as welcomed as possible.
+
+# Arcesium SE
+- company: Arcesium India Private Limited
+  position: Software Engineer
+  duration: July 2020 &mdash; June 2021
+  summary:
+    Took ownership of three applications, designed and implemented multiple feature requests from clients.
+  points:
+    - Facilitated UI development without mocking data in Linux environment by making a proxy server that provided with Kerberos authentication for requests made from
+      react in linux (where windows AD is missing) launches along with npm scripts seamlessly.Now used by other teams too.
+    - Refactored logics of existing processes decreasing database calls, increased responsiveness of app.
+    - Designed and implemented services and UI for app which helped MO team in taking reviews of various Brokers from Traders.
+    - Maintained above 95% code coverage through unit test ensuring zero code smells along with maintaining high SonarQube metrics.
+    - Implemented few integration test using Cypress.
+  techs:
+    - Node.js
+    - Java
+    - Junit
+    - Cypress
+    - MS SQL Server
+    - Jenkins
 
 
-# Assistant Tennis Coach
-- company: Iolani School
-  position: Assistant Tennis Coach
-  duration: September 2018  &mdash; July 2019
-  summary: I worked at my highschool as an assistant tennis coach where I taught children of ages five to sixteen the basics of tennis. 
-           By being on the Iolani Tennis Team since 7th grade and playing tennis since I was five years old, I was able to give back to my community and inspire others to love the sport. 
-           I ran simple conditoning drills and paitiently demonstrated basic tennis techniques. 
-           I learned how to be a leader and a good role model. 
+# Infosys SES
+- company: Infosys Limited
+  position: System Engineer Specialist
+  duration: August 2019  &mdash; June 2020
+  summary:
+    Was part of prestigious internal group STG(Strategic Technology Group). Selected through HackWithInfy(2019), came under top 300 in India. Completed 3 months training with 96% score.
+  points:
+    - Designed and implemented frontend and backend components of iAutomate tool which automatically parses service now requests and executes workflows eliminating need for support personnel for most of the tickets.
+    - Wrote default python workflow scripts for above tool.
+    - Migrated nike's inventory management system to react which was based on jsp pages.
+  techs:
+    - Spring Boot
+    - Python
+    - jsp
+    - React
+    - Apache Velocity
+
+# Internshala Intern
+- company: Internshala
+  position: TA Intern
+  duration: January 2018  &mdash; March 2018  
+  summary:
+    Did remote Internship in Internshala's Android course.
+  points:
+    - Developed song playback activity for android app used in course material.
+    - Resolved queries of enrolled students in the course.
+  techs:
+    - Android 
+    - Kotlin
