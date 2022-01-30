@@ -35,7 +35,7 @@
         {% include icon-links.html %}
       </div>
 
-      <div class="executive-summary" itemprop="description">
+      <div id="summary" class="executive-summary" itemprop="description">
         {{ site.resume_header_intro }}
       </div>
 
@@ -52,7 +52,7 @@
 
     {% if site.resume_section_experience %}
     <!-- begin Experience -->
-    <section class="content-section">
+    <section id="experience" class="content-section">
 
       <header class="section-header">
         <h2>Work Experience</h2>
@@ -60,7 +60,13 @@
 
       {% for job in site.data.experience %}
       <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+        {% if job.site %}
+          <a target="_blank" rel="noopener noreferrer" href="{{ job.site }}">
+            <h3 class="resume-item-title" itemprop="name">{{ job.company }}<img class="l-img" src="images/link.svg"></h3>
+          </a>
+        {% else %}
         <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+        {% endif %}
         <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
         <p class="resume-item-copy">{{ job.summary }}</p>
         <ul style="margin: 0.3em 0 0.3em 0;font-size: .9em;">
@@ -85,19 +91,40 @@
 
     {% if site.resume_section_projects %}
     <!-- begin Projects -->
-    <section class="content-section">
+    <section id="projects" class="content-section">
       <header class="section-header">
-        <h2>Projects</h2>
+        <h2>
+        <a id="projects" target="_blank" rel="noopener noreferrer" href="https://gyan-vardhan.herokuapp.com/allprojects">
+          Projects<img src="images/link.svg">
+        </a></h2>
       </header>
 
       {% for project in site.data.projects %}
       <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
         <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-        <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{
-            project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-        <h4 class="resume-item-details" itemprop="description">{{ project.role }} &bull; {{ project.duration }}</h4>
-        <p class="resume-item-copy">{{ project.description }}</p>
-        {% if project.image_path %}
+        <h3 class="resume-item-title" itemprop="name">
+          {% if project.url %}
+          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" itemprop="url">{{project.project }}<img src="images/link.svg"></a>
+          {% else %}{{ project.project }}
+          {% endif %}
+        </h3>
+        {% if project.short %}
+        <h4 class="resume-item-details" itemprop="description">{{ project.short }} &bull; {{ project.duration }}</h4>
+        {% endif %}
+        <!-- <p class="resume-item-copy">{{ project.description }}</p> -->
+        <ul style="margin: 0.3em 0 0.3em 0;font-size: .9em;">
+          {% for point in project.points %}
+            <li>{{point}}</li>
+          {% endfor %}
+          </ul>
+        {% if site.enable_pills == 'true' %}
+          <ul style="padding-inline-start: 0.2em;margin: 0;">
+            {% for tech in project.techs %}
+              <li class="dot-tech">{{tech}}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if site.enable_proj_img == 'true' and project.image_path %}
         <img src={{ project.image_path }} alt={{ project.image_name }} class="image-center no-print" itemprop="image">
         {% endif %}
       </div>
@@ -109,7 +136,7 @@
 
     {% if site.resume_section_skills %}
     <!-- begin Skills -->
-    <section class="content-section">
+    <section id="skills" class="content-section">
 
       <header class="section-header">
         <h2>Skills</h2>
@@ -117,7 +144,16 @@
       {% for skill in site.data.skills %}
       <div class="resume-item">
         <h4 class="resume-item-details">{{ skill.skill }}</h4>
-        <p class="resume-item-copy">{{ skill.description }}</p>
+        {% if skill.description %}
+          <p class="resume-item-copy">{{ skill.description }}</p>
+        {% endif %}
+        {% if site.enable_pills == 'true' %}
+          <ul style="padding-inline-start: 0.2em;margin: 0;">
+            {% for point in skill.points %}
+              <li class="dot-tech">{{point}}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </div>
       {% endfor %}
 
@@ -125,87 +161,116 @@
     <!-- end Skills -->
     {% endif %}
 
-    {% if site.resume_section_education %}
-    <!-- begin Education -->
-    <section class="content-section">
-      <header class="section-header">
-        <h2>Education</h2>
-      </header>
-
-      {% for education in site.data.education %}
-      <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-        <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-        <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}
-        </h4>
-        <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-        <p class="resume-item-copy" itemprop="description">
-        <ul class="resume-item-list">
-          {% for award in education.awards %}
-          <li>{{ award.award }}</li>
-          {% endfor %}
-        </ul>
-
-
-        <p class="resume-item-copy">{{ education.summary }}</p>
-      </div>
-      {% endfor %}
-    </section>
-    <!-- end Education -->
-    {% endif %}
-
-    {% if site.resume_section_recognition %}
-    <!-- begin Recognition -->
-    <section class="content-section">
+    {% if site.resume_section_awards %}
+    <!-- begin Awards-->
+    <section id="award" class="content-section">
 
       <header class="section-header">
-        <h2>Recognition</h2>
+        <h2>Awards & Achievements</h2>
       </header>
 
-      {% for recognition in site.data.recognitions %}
-      <div class="resume-item">
-        <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-        <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
-        <p class="resume-item-copy">{{ recognition.summary }}</p>
-      </div>
-      {% endfor %}
-
-    </section>
-    <!-- end Recognition -->
-    {% endif %}
-
-    {% if site.resume_section_associations %}
-    <!-- begin Associations -->
-    <section class="content-section">
-
-      <header class="section-header">
-        <h2>Associations</h2>
-      </header>
-
-      {% for association in site.data.associations %}
+      {% for award in site.data.awards %}
       <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-        <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{
-            association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
-        <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
-        <p class="resume-item-copy">{{ association.summary }}</p>
+        {% if award.link %}
+          <a target="_blank" rel="noopener noreferrer" href="{{ award.link }}">
+            <h3 class="resume-item-title" itemprop="award">{{ award.name }}<img class="l-img" src="images/link.svg"></h3>
+          </a>
+        {% else %}
+          <h3 class="resume-item-title" itemprop="award">{{ award.name }}</h3>
+        {% endif %}
+          <ul>
+            {% for point in award.points %}
+              <li>{{ point }}</li>
+             {% endfor %}
+          </ul>
       </div>
+      
       {% endfor %}
 
     </section>
     <!-- end Associations -->
     {% endif %}
 
-    {% if site.resume_section_interests %}
-    <!-- begin Interests -->
-    <section class="content-section">
+    {% if site.resume_section_certifications %}
+    <!-- begin Certifications -->
+    <section id="cert" class="content-section">
 
       <header class="section-header">
-        <h2>Outside Interests</h2>
+        <h2>Courses & Certifications</h2>
+      </header>
+
+      {% for cert in site.data.certifications %}
+      <div  class="resume-item">
+        {% if cert.link %}
+          <a target="_blank" rel="noopener noreferrer" href="{{ cert.link }}">
+            <h3 class="resume-item-title" itemprop="award">{{ cert.cert_name }}<img class="l-img" src="images/link.svg"></h3>
+          </a>
+        {% else %}
+          <h3 class="resume-item-title" itemprop="award">{{ cert.cert_name }}</h3>
+        {% endif %}
+        <h4 class="resume-item-details">{{ cert.organization }} &bull; {{ cert.year }}</h4>
+        <p class="resume-item-copy">{{ cert.summary }}</p>
+      </div>
+      {% endfor %}
+
+    </section>
+    <!-- end Certifications -->
+    {% endif %}
+
+    {% if site.resume_section_education %}
+    <!-- begin Education -->
+    <section id="education" class="content-section">
+      <header class="section-header">
+        <h2>Education</h2>
+      </header>
+
+      {% for education in site.data.education %}
+      <div class="resume-item" style="margin-bottom: -0.18em;" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+        {% if education.site %}
+          <a target="_blank" rel="noopener noreferrer" href="{{ education.site }}">
+            <h3 class="resume-item-title" itemprop="name">{{ education.uni }}<img class="l-img" src="images/link.svg"></h3>
+          </a>
+        {% else %}
+        <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
+        {% endif %}
+        <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}
+        </h4>
+        <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+        <p class="resume-item-copy" itemprop="description">
+        <ul class="resume-item-list">
+          {% for award in education.awards %}
+          <li>{{ award }}</li>
+          {% endfor %}
+        </ul>
+        <!-- <p class="resume-item-copy">{{ education.summary }}</p> -->
+      </div>
+      {% endfor %}
+    </section>
+    <!-- end Education -->
+    {% endif %}
+
+    
+
+    {% if site.resume_section_interests %}
+    <!-- begin Interests -->
+    <section id="others" class="content-section">
+
+      <header class="section-header">
+        <h2>Other Interests</h2>
       </header>
 
       <div class="resume-item">
         <ul class="resume-item-list">
           {% for interest in site.data.interests %}
-          <li>{{ interest.description }}</li>
+          <li>
+            {% if interest.link %}           
+            <a target="_blank" rel="noopener noreferrer" href="{{ interest.link }}">
+              {{ interest.description }}<img class="l-img" src="images/link.svg">
+            </a>
+            {% else %}
+            {{ interest.description }}
+            {% endif %}
+          </li>
           {% endfor %}
         </ul>
       </div>

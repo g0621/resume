@@ -13,6 +13,14 @@
     font-size: 1.75rem;
     letter-spacing: -.05rem;
     margin: 0;
+    a {
+      color: #333;
+      img{
+        height: 0.73em;
+        padding: 0.1em 0 0.02em 0;
+        margin-left: 0.2em;
+      }
+    }
   }
 }
 
@@ -121,7 +129,7 @@
 .contact-button {
   @include border-radius(3px);
   background-color: #efefef;
-  text-decoration: none;
+  text-decoration: none !important;
   text-align: center;
   display: block;
   margin: 1.5rem auto;
@@ -145,7 +153,12 @@
 .content-section {
   margin: 0 0 3rem;
 
-  .resume-item { margin-bottom: 2rem; }
+  .resume-item { 
+    margin-bottom: 2rem; 
+    a {
+      color: #333
+    }
+  }
 
   .resume-item-title {
     @include sans_bold;
@@ -165,6 +178,12 @@
     }
   }
 
+  .l-img{
+        height: 0.73em;
+        padding: 0.1em 0 0.02em 0;
+        margin-left: 0.2em;
+  }
+
   .image-center {
     height: auto;  
     width: 100%;
@@ -180,11 +199,17 @@
   .resume-item-list {
     a {
       color: #333;
-      text-decoration: none;
-      border-bottom: 1px solid;
+      text-decoration: none !important;
+      // border-bottom: 1px solid;
+
+      img {
+        height: 0.73em;
+        padding: 0.1em 0 0.02em 0;
+        margin-left: 0.2em;
+      }
 
       &:hover {
-        border-bottom: none;
+        border-bottom: none !important;
         color: #9c9c9c;
       }
     }

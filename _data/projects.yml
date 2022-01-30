@@ -9,10 +9,55 @@
  # description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
 
 # Springfield Community Outreach Group
-- project: Resume Website
-  role: Github Repository
-  duration: 2021
-  # url: "#"
+- project: 2PR
+  short: Post Ranking and Personal Reminder
+  duration: January 2021
+  url: "https://github.com/g0621/remd"
   description: Used Github to create a resume website using HTML and CSS. 
   image_path: "images/SCOG.jpg"
   image_name: "SCOG"
+  points:
+    - Built on microservice event driven architecture using NATS as event streaming server
+    - BULL.js for event scheduling and queue
+    - Uses redis's ZSET, HSET & LIST to maintain ranking and recent post queue. (tedis wrapper for nodejs)
+    - Each microservice(containerized) deployed in separate pod, deployment automated using Skaffold.
+    - Currently uses MongoDB to store all kind of data, planned separation based on structured and non structured data.
+    - Creates a ranking of public posts within past 25 days based on up-votes. On personal page users can create their cards,
+      app will remind them to revise every 1,3,5,7... days interval. with reset etc functionalities.
+    - Ranks/orders personal cards based on due days of their scheduled revision.
+    - Frontend made using React.
+  techs:
+    - MicroServices
+    - TypeScript
+    - Node NATS
+    - K8s
+    - Docker
+    - BULL.js
+    - Redis
+    - MongoDB
+    - React
+
+- project: Advanced Portfolio
+  short: Portfolio and Blog with social features
+  duration: August 2020
+  url: "https://github.com/g0621/Advanced-Portfolio"
+  description: Used Github to create a resume website using HTML and CSS. 
+  image_path: "images/SCOG.jpg"
+  image_name: "SCOG"
+  points:
+    - Explored potential of server side rendering using NEXT.js
+    - Separate pages for adding,updating and timeline display of Experience.
+    - Add update and showcase your projects click <a target="_blank" href="https://gyan-vardhan.herokuapp.com/allprojects"><b>here.</b></a>
+    - Write your Blogs using slate editor, save as draft and publish on your wish.
+  techs:
+    - Next.js
+    - Javascript
+    - node.js
+    - Bootstrap
+    - MongoDB
+    - Slate.js
+    - Auth0
+    - Jwt
+
+- project: More over Github
+  url: https://github.com/g0621

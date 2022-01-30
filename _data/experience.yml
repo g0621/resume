@@ -1,13 +1,14 @@
 # Jobs
 # Arcesium SSE
 - company: Arcesium India Private Limited
+  site : https://www.linkedin.com/company/arcesium/
   position: Senior Software Engineer
   location: Hyderabad
   duration: July 2021 &mdash; Present
   summary:
     Got early promotion with new project and responsibilities.
   points:
-    - Mentored 2 freshers and guided a new joiner resolving their technical blockers.
+    - Mentored 3 freshers and guided a new joiner resolving their technical blockers.
     - Designed and implemented one critical flow of ELT pipeline which processes and enriches transactional data for upstream layers.
     - Exposed APIs for various kind of report generation over aggregated data.
   techs:
@@ -20,6 +21,7 @@
 
 # Arcesium SE
 - company: Arcesium India Private Limited
+  site : https://www.glassdoor.co.in/Overview/Working-at-Arcesium-EI_IE1148900.11,19.htm
   position: Software Engineer
   duration: July 2020 &mdash; June 2021
   summary:
@@ -42,6 +44,7 @@
 
 # Infosys SES
 - company: Infosys Limited
+  site : https://www.infosys.com/
   position: System Engineer Specialist
   duration: August 2019  &mdash; June 2020
   summary:
@@ -59,6 +62,7 @@
 
 # Internshala Intern
 - company: Internshala
+  site : https://internshala.com/
   position: TA Intern
   duration: January 2018  &mdash; March 2018  
   summary:
