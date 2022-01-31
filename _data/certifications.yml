@@ -27,7 +27,7 @@
   organization: MAKAUT, WB.
   link: https://res.cloudinary.com/gyan0621/image/upload/v1643472675/Portfolio/macine_workshop.pdf
   year: March 2019
-  summary: Workshop on various Machine learning algorithms <a target="_blank" href="https://github.com/g0621/machine_learning"><b> check here.</b></a>
+  summary: Workshop on various Machine learning algorithms <a target="_blank" rel="noopener noreferrer" href="https://github.com/g0621/machine_learning"><b> check here.</b></a>
 
 
 - cert_name: IEEE Communications Society | IoT

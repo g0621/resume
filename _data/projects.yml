@@ -47,7 +47,7 @@
   points:
     - Explored potential of server side rendering using NEXT.js
     - Separate pages for adding,updating and timeline display of Experience.
-    - Add update and showcase your projects click <a target="_blank" href="https://gyan-vardhan.herokuapp.com/allprojects"><b>here.</b></a>
+    - Add update and showcase your projects click <a target="_blank" rel="noopener noreferrer" href="https://gyan-vardhan.herokuapp.com/allprojects"><b>here.</b></a>
     - Write your Blogs using slate editor, save as draft and publish on your wish.
   techs:
     - Next.js
