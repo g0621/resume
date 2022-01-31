@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 {% include head.html %}
 
@@ -62,7 +62,7 @@
       <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
         {% if job.site %}
           <a target="_blank" rel="noopener noreferrer" href="{{ job.site }}">
-            <h3 class="resume-item-title" itemprop="name">{{ job.company }}<img class="l-img" src="images/link.svg"></h3>
+            <h3 class="resume-item-title" itemprop="name">{{ job.company }}<img alt="link-img" class="l-img" src="images/link.svg"></h3>
           </a>
         {% else %}
         <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
@@ -94,8 +94,8 @@
     <section id="projects" class="content-section">
       <header class="section-header">
         <h2>
-        <a id="projects" target="_blank" rel="noopener noreferrer" href="https://gyan-vardhan.herokuapp.com/allprojects">
-          Projects<img src="images/link.svg">
+        <a target="_blank" rel="noopener noreferrer" href="https://gyan-vardhan.herokuapp.com/allprojects">
+          Projects<img alt="link-img" src="images/link.svg">
         </a></h2>
       </header>
 
@@ -125,7 +125,7 @@
           </ul>
         {% endif %}
         {% if site.enable_proj_img == 'true' and project.image_path %}
-        <img src={{ project.image_path }} alt={{ project.image_name }} class="image-center no-print" itemprop="image">
+        <img alt="project-image" src={{ project.image_path }} alt={{ project.image_name }} class="image-center no-print" itemprop="image">
         {% endif %}
       </div>
       {% endfor %}
@@ -143,7 +143,7 @@
       </header>
       {% for skill in site.data.skills %}
       <div class="resume-item">
-        <h4 class="resume-item-details">{{ skill.skill }}</h4>
+        <h3 class="resume-item-details">{{ skill.skill }}</h3>
         {% if skill.description %}
           <p class="resume-item-copy">{{ skill.description }}</p>
         {% endif %}
@@ -173,7 +173,7 @@
       <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
         {% if award.link %}
           <a target="_blank" rel="noopener noreferrer" href="{{ award.link }}">
-            <h3 class="resume-item-title" itemprop="award">{{ award.name }}<img class="l-img" src="images/link.svg"></h3>
+            <h3 class="resume-item-title" itemprop="award">{{ award.name }}<img alt="link-img" class="l-img" src="images/link.svg"></h3>
           </a>
         {% else %}
           <h3 class="resume-item-title" itemprop="award">{{ award.name }}</h3>
@@ -203,7 +203,7 @@
       <div  class="resume-item">
         {% if cert.link %}
           <a target="_blank" rel="noopener noreferrer" href="{{ cert.link }}">
-            <h3 class="resume-item-title" itemprop="award">{{ cert.cert_name }}<img class="l-img" src="images/link.svg"></h3>
+            <h3 class="resume-item-title" itemprop="award">{{ cert.cert_name }}<img alt="link-img" class="l-img" src="images/link.svg"></h3>
           </a>
         {% else %}
           <h3 class="resume-item-title" itemprop="award">{{ cert.cert_name }}</h3>
@@ -228,7 +228,7 @@
       <div class="resume-item" style="margin-bottom: -0.18em;" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
         {% if education.site %}
           <a target="_blank" rel="noopener noreferrer" href="{{ education.site }}">
-            <h3 class="resume-item-title" itemprop="name">{{ education.uni }}<img class="l-img" src="images/link.svg"></h3>
+            <h3 class="resume-item-title" itemprop="name">{{ education.uni }}<img alt="link-img" class="l-img" src="images/link.svg"></h3>
           </a>
         {% else %}
         <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
@@ -265,7 +265,7 @@
           <li>
             {% if interest.link %}           
             <a target="_blank" rel="noopener noreferrer" href="{{ interest.link }}">
-              {{ interest.description }}<img class="l-img" src="images/link.svg">
+              {{ interest.description }}<img alt="link-img" class="l-img" src="images/link.svg">
             </a>
             {% else %}
             {{ interest.description }}
