@@ -104,7 +104,7 @@
         <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
         <h3 class="resume-item-title" itemprop="name">
           {% if project.url %}
-          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" itemprop="url">{{project.project }}<img src="images/link.svg"></a>
+          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" itemprop="url">{{project.project }}<img alt="link-img" src="images/link.svg"></a>
           {% else %}{{ project.project }}
           {% endif %}
         </h3>
