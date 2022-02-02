@@ -65,6 +65,8 @@ resume_social_links:
   #resume_medium_url:            "https://medium.com/@jglovier"
 resume_print_social_links: true
 
+resume_show_quick_jump: true
+
 # Design settings
 resume_theme: default
 # Note: when editing locally, remember to restart

@@ -19,6 +19,11 @@ body{
 
 a {
   text-decoration: none !important;
+  color: #333;
+  &:hover {
+    border-bottom: none !important;
+    color: #9c9c9c;
+  }
 }
 
 .wrapper:before,

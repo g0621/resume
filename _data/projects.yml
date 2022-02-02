@@ -17,7 +17,7 @@
   image_path: "images/SCOG.jpg"
   image_name: "SCOG"
   points:
-    - Built on microservice event driven architecture using NATS as event streaming server
+    - Built on microservice event driven architecture using NATS as event streaming bus.
     - BULL.js for event scheduling and queue
     - Uses redis's ZSET, HSET & LIST to maintain ranking and recent post queue. (tedis wrapper for nodejs)
     - Each microservice(containerized) deployed in separate pod, deployment automated using Skaffold.
