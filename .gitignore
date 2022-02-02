@@ -4,3 +4,5 @@ _site
 _vendor
 commands.txt
 test.html
+CNAME
+.vscode

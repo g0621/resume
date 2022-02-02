@@ -1,0 +1,37 @@
+# Recognitions
+- cert_name: NIVT J2EE Training
+  organization: National Institute of Vocational Training
+  link: https://res.cloudinary.com/gyan0621/image/upload/v1643472295/Portfolio/java_training-min.pdf
+  year: June - July 2018
+  summary: Built Library Management system using Spring , jsp, hibernate & data jpa.
+
+- cert_name: Web Development Training
+  organization: Internshala
+  link: https://res.cloudinary.com/gyan0621/image/upload/v1593543946/Portfolio/Web_Development_Training_Certificate_compressed.pdf
+  year: January - February 2018
+  summary: Web development training on  HTML & CSS, Bootstrap, SQL and PHP and other tools.
+
+- cert_name: Android Development Training
+  organization: Internshala
+  link: https://res.cloudinary.com/gyan0621/image/upload/v1593543947/Portfolio/Android_Training_Certificate_compressed.pdf
+  year: January - February 2018
+  summary: Android development training using Kotlin
+
+- cert_name: Arduino | IoT Development
+  organization: Skyfi Labs
+  link: https://www.skyfilabs.com/verify-certificate/37270015
+  year: January 2019
+  summary: Automated irrigation system using Arduino platform.
+
+- cert_name: Machine learning workshop.
+  organization: MAKAUT, WB.
+  link: https://res.cloudinary.com/gyan0621/image/upload/v1643472675/Portfolio/macine_workshop.pdf
+  year: March 2019
+  summary: Workshop on various Machine learning algorithms <a target="_blank" rel="noopener noreferrer" href="https://github.com/g0621/machine_learning"><b> check here.</b></a>
+
+
+- cert_name: IEEE Communications Society | IoT
+  organization: ComSoc
+  link: https://res.cloudinary.com/gyan0621/image/upload/v1643474534/Portfolio/com_soc-min.pdf
+  year: November - December 2016
+  summary: Basic IoT Training.

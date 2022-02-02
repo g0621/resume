@@ -8,6 +8,13 @@
       target="_blank" rel="noopener noreferrer" itemprop="url">{% include icons/icon-website.html %}</a></li>
   {% endif %}
 
+  <!-- HackerEarth link -->
+  {% if site.resume_social_links.resume_hackerearth_url %}
+  <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_hackerearth_url }}" class="icon-link"
+      target="_blank" rel="noopener noreferrer" itemprop="sameAs">{% include icons/icon-hackerearth.html %}</a></li>
+  {% endif %}
+
+
   <!-- GitHub link -->
   {% if site.resume_social_links.resume_github_url %}
   <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_github_url }}" class="icon-link"
@@ -24,12 +31,6 @@
   {% if site.resume_social_links.resume_hackerrank_url %}
   <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_hackerrank_url }}" class="icon-link"
       target="_blank" rel="noopener noreferrer" itemprop="sameAs">{% include icons/icon-hackerrank.html %}</a></li>
-  {% endif %}
-
-  <!-- HackerEarth link -->
-  {% if site.resume_social_links.resume_hackerearth_url %}
-  <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_hackerearth_url }}" class="icon-link"
-      target="_blank" rel="noopener noreferrer" itemprop="sameAs">{% include icons/icon-hackerearth.html %}</a></li>
   {% endif %}
 
   <!-- LinkedIn link -->
