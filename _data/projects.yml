@@ -4,16 +4,16 @@
 # jazznotes.io
 #- project: jazznotes.io
 #  role: Founder & Primary Developer
- # duration: 2012 &mdash; Present
-  # url: "#"
- # description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+# duration: 2012 &mdash; Present
+# url: "#"
+# description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
 
 # Springfield Community Outreach Group
 - project: 2PR
   short: Post Ranking and Personal Reminder
   duration: January 2021
   url: "https://github.com/g0621/remd"
-  description: Used Github to create a resume website using HTML and CSS. 
+  description: Used Github to create a resume website using HTML and CSS.
   image_path: "images/SCOG.jpg"
   image_name: "SCOG"
   points:
@@ -41,7 +41,7 @@
   short: Portfolio and Blog with social features
   duration: August 2020
   url: "https://github.com/g0621/Advanced-Portfolio"
-  description: Used Github to create a resume website using HTML and CSS. 
+  description: Used Github to create a resume website using HTML and CSS.
   image_path: "images/SCOG.jpg"
   image_name: "SCOG"
   points:
@@ -58,6 +58,65 @@
     - Slate.js
     - Auth0
     - Jwt
+
+- project: Product Suggestion
+  short: Similar product suggestion
+  duration: May 2019
+  url: "https://github.com/g0621/ProductSuggestion"
+  description: Used Github to create a resume website using HTML and CSS.
+  image_path: "images/SCOG.jpg"
+  image_name: "SCOG"
+  points:
+    - started with <a target="_blank" rel="noopener noreferrer" href="https://www.kaggle.com/thekenjin/amazonapparelsdata?select=Amazon-clothing-info.csv"><b>Amazon dataset </b></a> having 183K data points.
+    - Data preprocessing involved removing null valued points,similar titles short titles, steaming and removing stop words and special character from title.
+    - Converted data points to <a target="_blank" rel="noopener noreferrer" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html"><b> TfIdf </b></a> vectors.
+    - Similarities calculated using <a target="_blank" rel="noopener noreferrer" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise_distances.html"><b> pairwise_distance </b></a> and <a target="_blank" rel="noopener noreferrer" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html#sklearn-metrics-pairwise-cosine-similarity"><b> cosine_similarity.</b></a>
+  techs:
+    - Flask
+    - Sklearn
+    - pandas
+    - numpy
+    - Machine learning
+
+- project: News Classifier
+  short: Fake News Classifier
+  duration: April 2019
+  url: "https://github.com/g0621/FakeNews"
+  description: Used Github to create a resume website using HTML and CSS.
+  image_path: "images/SCOG.jpg"
+  image_name: "SCOG"
+  points:
+    - Trained multiple models on same dataset to achieve maximum accuracy.
+    - Max accuracy of 94% was achieved using LSTM model.
+    - Tried TfIdf, Hashing and Count Vectorizers to increase accuracy, TfIdf came on top for all models as dataset was text major.
+    - Gained max accuracy using Multi-Nomial NB(88%), Passive-Aggressive(90%) models, Support vector Machine(88%).
+    - Used Deep learning models MultiLayered Neural Network with TF (81%), with Keras(93%) and LSTM(94%).
+    - More details in this <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/gyan0621/raw/upload/v1643794228/Portfolio/Fake_News_Detection_technique_DESIGN_LAB.pptx"><b> PPT.</b></a>
+  techs:
+    - Flask
+    - DeepLearning
+    - Tensorflow
+    - numpy
+    - Keras
+    - MachineLearning
+
+- project: In-Touch
+  short: Social Media App
+  duration: May 2018
+  url: "https://github.com/g0621/Android-Projects/tree/master/InTouch"
+  description: Used Github to create a resume website using HTML and CSS.
+  image_path: "images/SCOG.jpg"
+  image_name: "SCOG"
+  points:
+    - Made using Firebase SDK for auth and DB.
+    - Users can send and accept friend requests.
+    - After accepting as friend users can start private chat.
+    - Implemented Typing.. last-seen and online/offline functionalities.
+    - Users can share multimedia in chat.
+  techs:
+    - Android
+    - Firebase
+    - Java
 
 - project: More over Github
   url: https://github.com/g0621
